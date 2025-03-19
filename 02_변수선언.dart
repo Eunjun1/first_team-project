@@ -4,7 +4,21 @@ main(){
   var name = "유비";
   name = "장비";
   print(name);
-  
 
+  var height = 100;
+  print(height);
+
+  var weight = 45.8;
+  print(weight);
+    // bool < int < double < string 순으로 메로리 차지
+  
+  var gender = true;
+  gender = false;
+
+  print(gender);
+
+    // 내 친구의 이름은 장비 입니다.
+
+  print("내 친구의 이름은 " + name + "입니다.");
 }
 
