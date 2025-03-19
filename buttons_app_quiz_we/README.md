@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:buttons_app_quiz_we/README.md
 # buttons_app_quiz
+========
+# buttons_app
+>>>>>>>> 689545f3e4c22205c0b9e6386a10bd063a9b6324:Flutter/buttons_app/README.md
 
 A new Flutter project.
 
