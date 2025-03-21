@@ -3,7 +3,7 @@ main() {
   int num2 = 4;
 
   print(
-    "출력내용 : ${calc_F(num1, num2, 'add')}\n출력내용 : ${calc_F(num1, num2, 'sub')}\n출력내용 : ${calc_F(num1, num2, 'mul')}\n출력내용 : ${calc_F(num1, num2, 'div')}",
+    "출력내용 : ${calc_F(num1, num2, 'add')}출력내용 : ${calc_F(num1, num2, 'sub')}출력내용 : ${calc_F(num1, num2, 'mul')}출력내용 : ${calc_F(num1, num2, 'div')}",
   );
 
   // 덧셈 결과를 Function으로 작업하여 출력

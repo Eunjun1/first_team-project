@@ -3,7 +3,7 @@
 import 'gugudan**.dart';
 
 main() {
-  int num = 2;
+  int num = 3;
   Gugudan gugudan = Gugudan(num);
   gugudan.gugudanPrint();
 }
