@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
               padding: const EdgeInsets.all(3.0),
               child: CircleAvatar(
                 backgroundImage: AssetImage(
-                  'images/pikachu-1.jpg'
+                  'images/pikachu_1.jpg'
                 ),
                 radius: 50,
               ),
@@ -33,7 +33,7 @@ class Home extends StatelessWidget {
                   padding: const EdgeInsets.all(3.0),
                   child: CircleAvatar(
                     backgroundImage: AssetImage(
-                      'images/pikachu-2.jpg'
+                      'images/pikachu_2.jpg'
                     ),
                     radius: 50,
                   ),
@@ -42,7 +42,7 @@ class Home extends StatelessWidget {
                   padding: const EdgeInsets.all(3.0),
                   child: CircleAvatar(
                     backgroundImage: AssetImage(
-                      'images/pikachu-3.jpg'
+                      'images/pikachu_3.jpg'
                     ),
                     radius: 50,
                   ),
