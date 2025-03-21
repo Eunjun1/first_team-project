@@ -5,10 +5,10 @@
 import 'calc.dart';
 
 main() {
-  int startNum = 1;
-  int endNum = 10;
+  int startNum = 10;
+  int endNum = 1;
 
-  Calc calc = Calc(startNum, endNum);
+  Calc calc = Calc.check(startNum, endNum);
   int sum = calc.sumCalc();
   String result = calc.evenOdd(sum);
 
