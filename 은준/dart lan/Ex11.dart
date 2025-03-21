@@ -1,6 +1,6 @@
 // 지정된 숫자 구구단 출력 클래스
 // 클래스 전달 방법은 Method
-import 'gugudan*.dart';
+import 'gugudan_st.dart';
 
 main() {
   int num = 3;
