@@ -33,7 +33,7 @@ main() {
 
   for (int i = 0; i < white.length; i++) {
     if (black[i] == white[i]) {
-    } else if (black[i] > white[i]) {
+    } else if (black[i] > white[i]) { 
       for (int x = white[i]; x < black[i]; x++) {
         num[i]++;
       }
