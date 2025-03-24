@@ -20,28 +20,25 @@
 
 예제 입력: 
   0 1 2 2 2 7
-  
+  1 0 0 0 0 1
   2 1 2 1 2 1
 
 
 */
 
 main() {
-  List<int> black = [1, 1, 2, 2, 2, 8];
-  List<int> white = [2, 1, 2, 1, 2, 1];
-  List<int> num = [0, 0, 0, 0, 0, 0];
+  var white = List.filled(6, 0);
+  List<int> collectWhite = [1, 1, 2, 2, 2, 8];
+  List<int> sample = [0, 1, 2, 2, 2, 7];
 
-  for (int i = 0; i < white.length; i++) {
-    if (black[i] == white[i]) {
-    } else if (black[i] > white[i]) {
-      for (int x = white[i]; x < black[i]; x++) {
-        num[i]++;
-      }
-    } else if (black[i] < white[i]) {
-      for (int y = white[i]; y > black[i]; y--) {
-        num[i]--;
-      }
+  int n = 0;
+  for (int i in sample) {
+    if (collectWhite[n] == i) {
+      n++;
+    } else {
+      white[n]++;
+      n++;
     }
   }
-  print(num);
+  print(white);
 }
