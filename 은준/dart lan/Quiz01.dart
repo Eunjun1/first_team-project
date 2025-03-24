@@ -1,4 +1,5 @@
-/*동혁이는 오래된 창고를 뒤지다가 낡은 체스판과 피스를 발견했다.
+/*
+동혁이는 오래된 창고를 뒤지다가 낡은 체스판과 피스를 발견했다.
 
 체스판의 먼지를 털어내고 걸레로 닦으니 그럭저럭 쓸만한 체스판이 되었다. 하지만, 검정색 피스는 모두 있었으나, 
 흰색 피스는 개수가 올바르지 않았다.
@@ -20,25 +21,27 @@
 
 예제 입력: 
   0 1 2 2 2 7
-  1 0 0 0 0 1
+  
   2 1 2 1 2 1
 
 
 */
-
 main() {
-  var white = List.filled(6, 0);
-  List<int> collectWhite = [1, 1, 2, 2, 2, 8];
-  List<int> sample = [0, 1, 2, 2, 2, 7];
+  List<int> black = [1, 1, 2, 2, 2, 8];
+  List<int> white = [2, 1, 2, 1, 2, 1];
+  List<int> num = [0, 0, 0, 0, 0, 0];
 
-  int n = 0;
-  for (int i in sample) {
-    if (collectWhite[n] == i) {
-      n++;
-    } else {
-      white[n]++;
-      n++;
+  for (int i = 0; i < white.length; i++) {
+    if (black[i] == white[i]) {
+    } else if (black[i] > white[i]) { 
+      for (int x = white[i]; x < black[i]; x++) {
+        num[i]++;
+      }
+    } else if (black[i] < white[i]) {
+      for (int y = white[i]; y > black[i]; y--) {
+        num[i]--;
+      }
     }
   }
-  print(white);
+  print(num);
 }
