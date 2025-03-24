@@ -22,7 +22,7 @@
 예제 입력: 
   0 1 2 2 2 7
   
-  2 1 2 1 2 1c
+  2 1 2 1 2 1
 
 
 */
@@ -31,17 +31,11 @@ main() {
   List<int> white = [2, 1, 2, 1, 2, 1];
   List<int> num = [0, 0, 0, 0, 0, 0];
 
-  for (int i = 0; i < white.length; i++) {
-    if (black[i] == white[i]) {
-    } else if (black[i] > white[i]) { 
-      for (int x = white[i]; x < black[i]; x++) {
-        num[i]++;
-      }
-    } else if (black[i] < white[i]) {
-      for (int y = white[i]; y > black[i]; y--) {
-        num[i]--;
-      }
-    }
+  int j = 0;
+  for (int i in white) {
+    int missed = black[j] - i;
+    num.replaceRange(j, j+1, [missed]);
+    j ++;
   }
-  print(num);
+    print(num);
 }
